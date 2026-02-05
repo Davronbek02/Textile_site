@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fergana Textile Group | Production & 3D Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
+            url('https://img.freepik.com/premium-photo/purple-thread-is-wrapped-purple-yarn_1035899-24348.jpg?semt=ais_hybrid');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .product-card:hover img { transform: scale(1.08); }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="text-xl md:text-2xl font-extrabold text-blue-900 tracking-tighter">
+                    FERGANA <span class="text-emerald-600">TEXTILE GROUP</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8 font-medium text-xs uppercase tracking-wide">
+                    <a href="#home" data-i18n="nav-home" class="hover:text-emerald-600 transition">Bosh sahifa</a>
+                    <a href="#products" data-i18n="nav-products" class="hover:text-emerald-600 transition">Mahsulotlar</a>
+                    <a href="#design" data-i18n="nav-design" class="hover:text-emerald-600 transition">3D Dizayn</a>
+                    <a href="#contact" data-i18n="nav-contact" class="hover:text-emerald-600 transition">Aloqa</a>
+                </div>
+
+                <div class="flex items-center space-x-2 border-l pl-4">
+                    <button onclick="changeLang('uz')" class="px-2 py-1 text-xs font-bold hover:text-emerald-600 transition">UZ</button>
+                    <button onclick="changeLang('en')" class="px-2 py-1 text-xs font-bold hover:text-emerald-600 transition">EN</button>
+                    <button onclick="changeLang('ru')" class="px-2 py-1 text-xs font-bold hover:text-emerald-600 transition">RU</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl pt-20">
+            <h1 data-i18n="hero-title" class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Sifatli trikotaj va professional 3D dizayn</h1>
+            <p data-i18n="hero-desc" class="text-lg md:text-xl text-gray-200 mb-10 font-light max-w-2xl mx-auto">Trikotaj to'qimasi, tayyor tikuv buyumlari hamda CLO 3D va CorelDraw dasturlarida professional modellashtirish.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#products" data-i18n="btn-catalog" class="px-8 py-4 bg-emerald-600 text-white font-bold rounded shadow-lg hover:bg-emerald-700 transition">Mahsulotlar</a>
+                <a href="#design" data-i18n="btn-design" class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/30 font-bold rounded hover:bg-white/20 transition">Dizayn Xizmati</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 data-i18n="products-title" class="text-3xl font-bold text-blue-900 mb-4 uppercase tracking-widest">Bizning Mahsulotlarimiz</h2>
+                <div class="w-20 h-1 bg-emerald-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="product-card group bg-white border rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://avatars.mds.yandex.net/i?id=ce0c6d03e6e74b21ae363a777cb92f5af30cd35e-5234651-images-thumbs&n=13" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 data-i18n="prod1-name" class="text-xl font-bold mb-3 text-blue-900">Trikotaj To'qimasi</h4>
+                        <p data-i18n="prod1-desc" class="text-gray-600 text-sm mb-4">Har xil turdagi yuqori sifatli trikotaj matolari ishlab chiqaramiz.</p>
+                    </div>
+                </div>
+
+                <div class="product-card group bg-white border rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf84PkkRcpGewoNJyn9c0Nc1cLV33s-ejhpQ&s" class="w-full h-full object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 data-i18n="prod2-name" class="text-xl font-bold mb-3 text-blue-900">Tikuv Buyumlari</h4>
+                        <p data-i18n="prod2-desc" class="text-gray-600 text-sm mb-4">Sifatli xomashyodan tayyorlangan har xil turdagi kiyimlar.</p>
+                    </div>
+                </div>
+
+                <div class="product-card group bg-slate-900 border rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://avatars.mds.yandex.net/i?id=b0c8adcc3cac938d0f217c6b92845eb07fede911-10993330-images-thumbs&ref=rim&n=33&w=250&h=250" class="w-full h-full object-cover transition-transform duration-500 opacity-80">
+                    </div>
+                    <div class="p-6">
+                        <h4 data-i18n="prod3-name" class="text-xl font-bold mb-3 text-emerald-400">Dizaynerlik Xizmatlari</h4>
+                        <p data-i18n="prod3-desc" class="text-slate-400 text-sm mb-4">Corel Draw va CLO 3D orqali zamonaviy modellashtirish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1">
+                <img src="https://cdna.artstation.com/p/assets/images/images/027/036/700/smaller_square/cg-noobs-md18keyshot-3pose-131.jpg?1590420682" class="rounded-3xl shadow-2xl">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 data-i18n="design-title" class="text-3xl font-bold text-blue-900 mb-6">CLO 3D & CorelDRAW Texnologiyalari</h2>
+                <p data-i18n="design-desc" class="text-gray-600 mb-8 leading-relaxed">Biz kiyim namunasini tikishdan oldin uning 3D ko'rinishini yaratamiz. Bu sizga matoning tushishi, o'lcham va ranglarini virtual sinash imkonini beradi.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center p-4 bg-white rounded-lg shadow-sm border-l-4 border-emerald-500">
+                        <i class="fas fa-microchip text-emerald-500 mr-4"></i>
+                        <span data-i18n="soft-1">CLO 3D virtual modellashtirish</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-white rounded-lg shadow-sm border-l-4 border-blue-500">
+                        <i class="fas fa-pencil-ruler text-blue-500 mr-4"></i>
+                        <span data-i18n="soft-2">CorelDRAW grafik dizayn va lekalalar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-blue-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12 border-b border-blue-800 pb-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-6 italic">FERGANA TEXTILE GROUP</h3>
+                <p data-i18n="footer-about" class="text-blue-200 text-sm leading-relaxed">O'zbekistonning trikotaj sanoatidagi ishonchli hamkoringiz.</p>
+            </div>
+            <div>
+                <h4 data-i18n="nav-contact" class="font-bold mb-6 text-white uppercase tracking-widest">Aloqa</h4>
+                <div class="space-y-3 text-sm text-blue-200">
+                    <p><i class="fas fa-map-marker-alt mr-2 text-emerald-400"></i> Yangi Zamon ko'chasi 15-uy, Qirguli mavzesi,Farg'ona, O'zbekiston</p>
+                    <p><i class="fas fa-phone mr-2 text-emerald-400"></i> +998 91 153 27 95</p>
+                    <p><i class="fas fa-envelope mr-2 text-emerald-400"></i> info@ferganatextile.uz</p>
+                </div>
+            </div>
+            <div>
+                <h4 data-i18n="footer-social" class="font-bold mb-6">Bizni kuzating</h4>
+                <div class="flex space-x-6 text-2xl">
+                    <a href="https://instagram.com/profilingiz_nomi" target="_blank" class="hover:text-emerald-400 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://t.me/Textile_light_industry" target="_blank" class="hover:text-emerald-400 transition">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-8 text-xs text-blue-400 font-medium">
+            &copy; 2026 FERGANA TEXTILE GROUP. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            uz: {
+                "nav-home": "Bosh sahifa", "nav-products": "Mahsulotlar", "nav-design": "3D Dizayn", "nav-contact": "Aloqa",
+                "hero-title": "Sifatli trikotaj va professional 3D dizayn",
+                "hero-desc": "Trikotaj to'qimasi, tayyor tikuv buyumlari hamda CLO 3D va CorelDraw dasturlarida professional modellashtirish.",
+                "btn-catalog": "Mahsulotlar", "btn-design": "Dizayn Xizmati",
+                "products-title": "Bizning Mahsulotlarimiz",
+                "prod1-name": "Trikotaj To'qimasi", "prod1-desc": "Har xil turdagi yuqori sifatli trikotaj matolari ishlab chiqaramiz.",
+                "prod2-name": "Tikuv Buyumlari", "prod2-desc": "Sifatli xomashyodan tayyorlangan har xil turdagi kiyimlar.",
+                "prod3-name": "Dizaynerlik Xizmatlari", "prod3-desc": "Corel Draw va CLO 3D orqali zamonaviy modellashtirish.",
+                "design-title": "CLO 3D & CorelDRAW Texnologiyalari",
+                "design-desc": "Biz kiyim namunasini tikishdan oldin uning 3D ko'rinishini yaratamiz.",
+                "soft-1": "CLO 3D virtual modellashtirish", "soft-2": "CorelDRAW grafik dizayn va lekalalar",
+                "footer-about": "O'zbekistonning trikotaj sanoatidagi ishonchli hamkoringiz.", "footer-social": "Bizni kuzating"
+            },
+            en: {
+                "nav-home": "Home", "nav-products": "Products", "nav-design": "3D Design", "nav-contact": "Contact",
+                "hero-title": "Quality Knitwear & Professional 3D Design",
+                "hero-desc": "Knitting production, ready-to-wear garments, and professional modeling in CLO 3D and CorelDraw.",
+                "btn-catalog": "Products", "btn-design": "Design Service",
+                "products-title": "Our Products",
+                "prod1-name": "Knitting Production", "prod1-desc": "We produce various types of high-quality knitted fabrics.",
+                "prod2-name": "Garments", "prod2-desc": "Ready garments made from high-quality raw materials.",
+                "prod3-name": "Design Services", "prod3-desc": "Modern modeling via Corel Draw and CLO 3D.",
+                "design-title": "CLO 3D & CorelDRAW Technologies",
+                "design-desc": "We create a 3D view of the garment sample before sewing it.",
+                "soft-1": "CLO 3D virtual modeling", "soft-2": "CorelDRAW graphic design and patterns",
+                "footer-about": "Your reliable partner in the textile industry of Uzbekistan.", "footer-social": "Follow us"
+            },
+            ru: {
+                "nav-home": "Главная", "nav-products": "Продукция", "nav-design": "3D Дизайн", "nav-contact": "Контакты",
+                "hero-title": "Качественный трикотаж и профессиональный 3D дизайн",
+                "hero-desc": "Производство трикотажа, готовые изделия и профессиональное моделирование в CLO 3D и CorelDraw.",
+                "btn-catalog": "Продукция", "btn-design": "Услуги дизайна",
+                "products-title": "Наша Продукция",
+                "prod1-name": "Трикотажное полотно", "prod1-desc": "Мы производим различные виды высококачественных трикотажных тканей.",
+                "prod2-name": "Швейные изделия", "prod2-desc": "Готовая одежда из высококачественного сырья.",
+                "prod3-name": "Дизайнерские услуги", "prod3-desc": "Современное моделирование через Corel Draw и CLO 3D.",
+                "design-title": "Технологии CLO 3D и CorelDRAW",
+                "design-desc": "Мы создаем 3D-вид образца одежды перед его пошивом.",
+                "soft-1": "Виртуальное моделирование CLO 3D", "soft-2": "Графический дизайн и лекала CorelDRAW",
+                "footer-about": "Ваш надежный партнер в текстильной промышленности Узбекистана.", "footer-social": "Подписывайтесь"
+            }
+        };
+
+        function changeLang(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                el.innerText = translations[lang][key];
+            });
+            document.documentElement.lang = lang;
+        }
+    </script>
+</body>
+</html>
